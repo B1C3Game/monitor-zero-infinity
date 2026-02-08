@@ -23,15 +23,16 @@ This ensures frequent detection of edge cases and validates the monitoring logic
 
 ## Non-Deterministic Monitoring (Testing)
 
-For demonstration purposes, the `monitorZero` function is currently non-deterministic: it randomly ignores some zero events (50% chance). This means that running the monitor twice on the same data can yield different results.
+For demonstration purposes, the `monitorZero` function is currently non-deterministic: it randomly ignores some zero events (50% chance). This means that running the monitor twice on the same data can yield different results. This feature illustrates how the outcome of monitoring can depend on the observer or the process, even when the underlying data set is identical.
 
 ### What does this prove?
 This non-deterministic behavior demonstrates:
 - How randomness and probabilistic logic can affect monitoring outcomes.
 - That repeated runs on identical data may produce different logs and alerts, highlighting the importance of deterministic monitoring for production systems.
 - The risks of relying on non-deterministic detection, such as missing critical events or inconsistent reporting.
+- How the result of monitoring can vary depending on the observer or process, even with the same data set.
 
-This feature is useful for testing robustness and understanding the impact of randomness, but should be removed or replaced with deterministic logic for production use.
+This feature is useful for testing robustness and understanding the impact of randomness and observer-dependence, but should be removed or replaced with deterministic logic for production use.
 
 
 # Monitor Zero Infinity
