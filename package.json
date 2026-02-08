@@ -1,0 +1,14 @@
+{
+  "name": "monitor-zero-infinity",
+  "version": "0.1.0",
+  "description": "Tool for monitoring zero and infinity events in software systems.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": ["monitoring", "zero", "infinity", "software", "logging", "alerting"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}

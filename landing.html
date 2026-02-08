@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitor Zero Infinity – Landing Page</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f8f9fa; color: #222; }
+    header { background: #1a237e; color: #fff; padding: 2rem 1rem; text-align: center; }
+    h1 { margin: 0 0 0.5rem 0; font-size: 2.5rem; }
+    h2 { color: #1a237e; margin-top: 2rem; }
+    .container { max-width: 900px; margin: 2rem auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 2rem; }
+    .audience { margin-bottom: 2rem; }
+    .usp { background: #e3e7fd; border-left: 5px solid #3949ab; padding: 1rem 1.5rem; margin: 2rem 0; border-radius: 4px; }
+    ul { margin: 0.5rem 0 1.5rem 1.5rem; }
+    .examples { background: #f1f8e9; border-left: 5px solid #7cb342; padding: 1rem 1.5rem; border-radius: 4px; }
+      .terminal-window {
+        background: #222;
+        color: #e0e0e0;
+        font-family: 'Fira Mono', 'Consolas', monospace;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px #0002;
+        padding: 1rem 1.5rem;
+        margin: 1rem 0;
+        font-size: 1.05rem;
+        overflow-x: auto;
+        border: 1px solid #333;
+        position: relative;
+      }
+      .terminal-window:before {
+        content: '';
+        display: block;
+        height: 0.8rem;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(90deg, #f44336 0 20%, #ffeb3b 20% 40%, #4caf50 40% 60%, transparent 60% 100%);
+        border-radius: 4px 4px 0 0;
+      }
+    footer { text-align: center; color: #888; margin: 2rem 0 1rem 0; font-size: 0.95rem; }
+    @media (max-width: 600px) { .container { padding: 1rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Monitor Zero Infinity</h1>
+    <p>Proactive detection and management of zero and infinity values in modern software systems</p>
+  </header>
+  <div class="container">
+    <section class="audience">
+      <h2>For Every Software Engineering Audience</h2>
+      <ul>
+        <li><strong>Backend Engineers:</strong> Prevent silent data corruption and system crashes by catching edge-case values in APIs, databases, and services.</li>
+        <li><strong>Frontend Developers:</strong> Ensure UI stability by handling unexpected zero/infinity values in user-facing applications and dashboards.</li>
+        <li><strong>Data Scientists & ML Engineers:</strong> Detect and trace anomalies in data pipelines, model training, and analytics workflows.</li>
+        <li><strong>QA & Test Engineers:</strong> Automate edge-case testing and verify system robustness against extreme numeric values.</li>
+        <li><strong>DevOps & SREs:</strong> Integrate monitoring into CI/CD and production observability for early warning and automated remediation.</li>
+        <li><strong>Product Managers:</strong> Reduce risk of critical failures and improve product reliability for end users.</li>
+      </ul>
+        <div class="terminal">
+          <h3>Sample Output</h3>
+          <div class="terminal-window">
+        <pre>
+        $ monitor-zero-infinity run input.txt
+        [INFO] Monitoring started...
+        [ZERO DETECTED] Value: 0 | Source: File Input
+        [INFINITY DETECTED] Value: Infinity | Source: File Input
+        [INFINITY DETECTED] Value: -Infinity | Source: File Input
+        [LARGE VALUE DETECTED] Value: 1e+15 | Source: File Input
+        [INFO] Monitoring completed.
+        [SUMMARY] Zero events: 1 | Infinity events: 2 | Large values: 1 | Total processed: 6
+        </pre>
+          </div>
+          <h3>Random Stream Output Example</h3>
+          <div class="terminal-window">
+        <pre>
+        Choose a data source to monitor:
+        1. Example Array
+        2. Random Number Stream
+        3. File Input
+        Enter choice (1-3): 2
+        [INFINITY EVENT] Random Stream Run 1: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value exceeds threshold (1000000000000000).
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 1: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value exceeds threshold (1000000000000000).
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value exceeds threshold (1000000000000000).
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value exceeds threshold (1000000000000000).
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value exceeds threshold (1000000000000000).
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 1: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 1: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 1: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 1: Value is infinite.
+        [ZERO EVENT] Random Stream Run 1: Value is zero/null/undefined.
+
+        --- Monitoring Report ---
+        Source: Random Stream Run 1
+        Total values evaluated: 100
+        Events triggered: 70
+        Total sum of finite values: 13000000000001084
+        Average of finite values: 213114754098378.44
+        ------------------------
+
+        [INFINITY EVENT] Random Stream Run 2: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value exceeds threshold (1000000000000000).
+        [ZERO EVENT] Random Stream Run 2: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [ZERO EVENT] Random Stream Run 2: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 2: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [ZERO EVENT] Random Stream Run 2: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value exceeds threshold (1000000000000000).
+        [ZERO EVENT] Random Stream Run 2: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [ZERO EVENT] Random Stream Run 2: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 2: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [ZERO EVENT] Random Stream Run 2: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [ZERO EVENT] Random Stream Run 2: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [ZERO EVENT] Random Stream Run 2: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value exceeds threshold (1000000000000000).
+        [ZERO EVENT] Random Stream Run 2: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value exceeds threshold (1000000000000000).
+        [ZERO EVENT] Random Stream Run 2: Value is zero/null/undefined.
+        [ZERO EVENT] Random Stream Run 2: Value is zero/null/undefined.
+        [INFINITY EVENT] Random Stream Run 2: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 2: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+        [INFINITY EVENT] Random Stream Run 2: Value exceeds threshold (1000000000000000).
+        [INFINITY EVENT] Random Stream Run 2: Value is infinite.
+
+        --- Monitoring Report ---
+        Source: Random Stream Run 2
+        Total values evaluated: 100
+        Events triggered: 63
+        Total sum of finite values: 13000000000001084
+        Average of finite values: 213114754098378.44
+        ------------------------
+
+        --- Comparison Report ---
+        Run 1: 70 events out of 100
+        Run 2: 63 events out of 100
+        Difference in events triggered: -7
+        ------------------------
+        </pre>
+          </div>
+        </div>
+    </section>
+    <section class="usp">
+      <h2>Unique Selling Proposition (USP)</h2>
+      <p><strong>Monitor Zero Infinity</strong> is the only open-source tool that provides <b>comprehensive, extensible, and automated detection</b> of zero and infinity values across the entire software stack. It empowers teams to:</p>
+      <ul>
+        <li><b>Prevent hidden bugs</b> caused by unhandled edge cases</li>
+        <li><b>Automate detection</b> in real time, not just during testing</li>
+        <li><b>Integrate seamlessly</b> with Node.js, Python, REST APIs, and more</li>
+        <li><b>Customize responses</b> (logging, alerting, auto-remediation) for your domain</li>
+        <li><b>Gain insight</b> into the root causes of data and system anomalies</li>
+      </ul>
+      <h3>Why is this critical?</h3>
+      <p>Zero and infinity values are often overlooked, yet they can silently break calculations, propagate errors, and cause catastrophic failures. Monitor Zero Infinity makes these invisible threats visible and actionable—before they impact your users or business.</p>
+    </section>
+    <section class="examples">
+      <h2>Real-Life Examples</h2>
+      <ul>
+        <li><b>API Backend:</b> A payment service returns <code>0</code> for a transaction amount due to a rounding bug. Monitor Zero Infinity flags this, preventing a financial loss and alerting the team before it reaches production.</li>
+        <li><b>Data Pipeline:</b> During ETL, a sensor stream produces <code>Infinity</code> due to a division by zero. The tool detects and logs the anomaly, allowing data scientists to clean and correct the dataset before model training.</li>
+        <li><b>Frontend Dashboard:</b> A charting library receives <code>-Infinity</code> from a backend calculation, causing the UI to crash. With monitoring in place, the value is caught and replaced with a safe fallback, preserving user experience.</li>
+        <li><b>Machine Learning:</b> Model training fails because a feature column contains zeros where only positive values are valid. The tool highlights the issue, saving hours of debugging and retraining.</li>
+        <li><b>DevOps/Production:</b> An automated batch job starts producing <code>1e15</code> (very large) values due to a misconfigured parameter. Monitor Zero Infinity triggers an alert, allowing SREs to roll back before downstream systems are affected.</li>
+        <li><b>QA Automation:</b> Test scripts inject edge-case values (0, Infinity, -Infinity) to verify system resilience. The tool provides instant feedback on which cases are handled and which are not.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Get Started</h2>
+      <ol>
+        <li>Clone the repository: <code>git clone &lt;repo-url&gt;</code></li>
+        <li>Install dependencies: <code>npm install</code></li>
+        <li>Integrate with your code or pipeline using simple APIs</li>
+        <li>Configure custom alerts and responses for your needs</li>
+      </ol>
+      <p>See the <a href="README.md">README</a> for full documentation and integration guides.</p>
+    </section>
+  </div>
+  <footer>
+    &copy; 2026 Monitor Zero Infinity &mdash; Open Source. Empowering robust software everywhere.
+  </footer>
+</body>
+</html>
