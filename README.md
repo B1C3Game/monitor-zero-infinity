@@ -97,6 +97,13 @@ When the tool detects zero, infinity, or very large numbers, you can take action
 - Advanced analytics for zero/infinity events
 - Dashboard for real-time monitoring
 - Custom plugins for new platforms
+- Multiple methods for starting automated responses based on alert type (e.g., trigger scripts, webhooks, API calls, messaging systems; integration with automation tools like Zapier, IFTTT, Jenkins, Slack, Microsoft Teams)
+- Support for importing and monitoring streams of different types (e.g., numeric, text, JSON, CSV) and direct monitoring of API responses, including:
+  - REST APIs (e.g., monitoring payment gateway responses for zero or infinite values in finance)
+  - GraphQL APIs (e.g., checking query results for missing or extreme values in SaaS platforms)
+  - WebSocket APIs (e.g., real-time sensor data monitoring in IoT)
+  - SOAP APIs (e.g., validating legacy system responses in enterprise IT)
+  - Real-world examples: alerting on zero sales in e-commerce, infinite values in risk scoring for insurance, large numbers in user activity for social media, missing data in healthcare APIs
 
 ### Step-by-Step Integration Example
 3. **Choose or create your input stream**
