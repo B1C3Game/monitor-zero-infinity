@@ -75,9 +75,9 @@ values.forEach(v => {
 - Batch processing numeric files
 
 ## Future Features
-- Advanced analytics
-- Real-time dashboard
-- Custom plugins
+- Advanced analytics for zero/infinity events
+- Dashboard for real-time monitoring
+- Custom plugins for new platforms
 
 ### Step-by-Step Integration Example
 3. **Choose or create your input stream**
@@ -123,11 +123,6 @@ values.forEach(v => {
 - Checking API responses for invalid or extreme values
 - Validating database query results for edge cases
 - Batch processing files with numeric data for monitoring
-
-## Future Features
-- Advanced analytics for zero/infinity events
-- Dashboard for real-time monitoring
-- Custom plugins for new platforms
 
 ## License
 MIT
